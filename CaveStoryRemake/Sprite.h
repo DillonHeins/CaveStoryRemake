@@ -20,12 +20,13 @@ public:
 	// going to be overriding this in animated sprite
 	virtual void update();
 	void draw(Graphics &graphics, int x, int y);
-private:
+protected:
 	// Where on the spritesheet to get the sprite from
 	SDL_Rect _sourceRect;
 	// Sprite sheet responsible for this particular sprite
 	SDL_Texture* _spriteSheet;
 
+private:
 	float _x, _y;
 };
 

@@ -41,14 +41,49 @@ public:
 	void draw(Graphics &graphics, int x, int y);
 
 	/*
-		void setupAnimations ==>
-		A required function that sets up all animations for a sprite
+	void setupAnimations ==>
+	A required function that sets up all animations for a sprite
 	*/
 	virtual void setupAnimations();
 
+protected:
+	double _timeToUpdate;
+	bool _currentAnimationOnce;
+	std::string _currentAnimation;
+
+	/*
+		void addAnimation ==>
+		Adds an animation to the map of animations for the sprite
+	*/
+	void addAnimation(int frames, int x, int y, std::string name, int width, int height, Vector2 offset);
+
+	/*
+		void resetAnimations ==>
+		Resets all animations associated with this sprite
+	*/
+	void resetAnimations();
+
+	/*
+		void stopAnimation ==>
+		Stops the current animation
+	*/
+	void stopAnimation();
+
+	/*
+		void setVisible ==>
+		Changes the visibility of the aniamted sprite
+	*/
+	void setVisible(bool visible);
+
+	/*
+		void animationDone ==>
+		Logic that happens when an animation ends
+	*/
+	virtual void animationDone(std::string currentAnimation);
+	
 private:
 	// Vector of rectangles is each of the different sub-sprites (locations on spritesheet)
-	std::map<std::string, std::has_move_constructor<SDL_Rect>> _animations;
+	std::map<std::string, std::vector<SDL_Rect>> _animations;
 	// Offsets to access different locations
 	std::map <std::string, Vector2> _offsets;
 
