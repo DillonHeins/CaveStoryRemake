@@ -25,9 +25,9 @@ protected:
 	SDL_Rect _sourceRect;
 	// Sprite sheet responsible for this particular sprite
 	SDL_Texture* _spriteSheet;
-
-private:
+	
 	float _x, _y;
+private:
 };
 
 #endif

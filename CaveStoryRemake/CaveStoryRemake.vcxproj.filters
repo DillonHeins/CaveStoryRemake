@@ -39,6 +39,9 @@
     <ClCompile Include="AnimatedSprite.cpp">
       <Filter>Source Files\src</Filter>
     </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graphics.h">
@@ -57,6 +60,9 @@
       <Filter>Source Files\header</Filter>
     </ClInclude>
     <ClInclude Include="AnimatedSprite.h">
+      <Filter>Source Files\header</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
       <Filter>Source Files\header</Filter>
     </ClInclude>
   </ItemGroup>
