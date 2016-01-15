@@ -1,13 +1,31 @@
-﻿Build started 2016/01/07 6:28:30 PM.
+﻿Build started 2016/01/15 12:50:37 PM.
      1>Project "C:\Users\Dillon\Documents\Visual Studio 2013\Projects\CaveStoryRemake\CaveStoryRemake\CaveStoryRemake.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Game.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt AnimatedSprite.cpp Game.cpp Graphics.cpp Level.cpp Player.cpp Sprite.cpp main.cpp
+         Level.cpp
+         Generating Code...
+         Compiling...
+         Sprite.cpp
+     1>c:\users\dillon\documents\visual studio 2013\projects\cavestoryremake\cavestoryremake\sprite.cpp(27): warning C4244: 'initializing' : conversion from 'const float' to 'int', possible loss of data
+         Player.cpp
+     1>c:\users\dillon\documents\visual studio 2013\projects\cavestoryremake\cavestoryremake\player.cpp(48): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\dillon\documents\visual studio 2013\projects\cavestoryremake\cavestoryremake\player.cpp(52): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+         Graphics.cpp
          Game.cpp
-     1>c:\users\dillon\documents\visual studio 2013\projects\cavestoryremake\cavestoryremake\game.cpp(70): warning C4244: 'argument' : conversion from 'const int' to 'float', possible loss of data
+     1>c:\users\dillon\documents\visual studio 2013\projects\cavestoryremake\cavestoryremake\game.cpp(71): warning C4244: 'argument' : conversion from 'const int' to 'float', possible loss of data
+     1>c:\users\dillon\documents\visual studio 2013\projects\cavestoryremake\cavestoryremake\game.cpp(90): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+         AnimatedSprite.cpp
+     1>c:\users\dillon\documents\visual studio 2013\projects\cavestoryremake\cavestoryremake\animatedsprite.cpp(64): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\dillon\documents\visual studio 2013\projects\cavestoryremake\cavestoryremake\animatedsprite.cpp(82): warning C4244: '=' : conversion from 'const float' to 'int', possible loss of data
+     1>c:\users\dillon\documents\visual studio 2013\projects\cavestoryremake\cavestoryremake\animatedsprite.cpp(83): warning C4244: '=' : conversion from 'const float' to 'int', possible loss of data
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         main.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Dillon\Documents\Visual Studio 2013\Projects\CaveStoryRemake\Debug\CaveStoryRemake.exe" /INCREMENTAL /NOLOGO SDL2.lib SDL2main.lib SDL2_image.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Dillon\Documents\Visual Studio 2013\Projects\CaveStoryRemake\Debug\CaveStoryRemake.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Dillon\Documents\Visual Studio 2013\Projects\CaveStoryRemake\Debug\CaveStoryRemake.lib" /MACHINE:X86 Debug\AnimatedSprite.obj
          Debug\Game.obj
          Debug\Graphics.obj
+         Debug\Level.obj
          Debug\main.obj
          Debug\Input.obj
          Debug\Player.obj
@@ -17,4 +35,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.58
+Time Elapsed 00:00:02.34

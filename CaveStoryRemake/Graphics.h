@@ -2,9 +2,11 @@
 #define GRAPHICS_H
 
 /*
-	Game class
-	Holds all information for main game loop
+	Graphics class
+	Holds all information dealing with graphics for the game
 */
+
+#include <SDL.h>
 
 #include <map>
 #include <string>
